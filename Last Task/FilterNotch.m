@@ -7,7 +7,7 @@ y1 = columns/2 + V0 ;
 x2 = rows/2 -U0;
 y2 = columns/2 - V0 ;
 
-image_thresholded = zeros(size(img));
+image_thresholded = ones(size(img));
 
 for r = 1:rows    % for number of rows of the image
     for c = 1:columns    % for number of columns of the image
