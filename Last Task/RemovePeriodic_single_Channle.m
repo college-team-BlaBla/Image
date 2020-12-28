@@ -15,7 +15,7 @@ filterd = H .* F;
 Mag2 =abs(filterd).^2;
 Mag2 = mat2gray(log(Mag2+1));
 Mag2 = fftshift(Mag2);
-figure,imshow(Mag2),title('Power Spectrum Change')
+%figure,imshow(Mag2),title('Power Spectrum Change')
 
 filterd = ifft2(filterd);
 %figure,imshow(filterd),title('Filterd');
