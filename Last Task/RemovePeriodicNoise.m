@@ -1,4 +1,4 @@
-function [] = RemovePeriodicNoise(Image_Path ,D0,U0,V0)
+function [] = RemovePeriodicNoise(Image_Path )
 
 img = imread(Image_Path);
 figure,imshow(img),title('Original');
@@ -9,9 +9,9 @@ B =GetImageChannel(img,'Blue');
 
 
 
-X =RemovePeriodic_single_Channle(R(:,:,1),D0,U0,V0);
-Y =RemovePeriodic_single_Channle(G(:,:,2),D0,U0,V0);
-Z =RemovePeriodic_single_Channle(B(:,:,3),D0,U0,V0);
+X =RemovePeriodic_single_Channle(R(:,:,1));
+Y =RemovePeriodic_single_Channle(G(:,:,2));
+Z =RemovePeriodic_single_Channle(B(:,:,3));
 
 %figure,imshow(X),title('X');
 %figure,imshow(Y),title('Y');
